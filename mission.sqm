@@ -8,18 +8,18 @@ class EditorData
 	toggles=34;
 	class ItemIDProvider
 	{
-		nextID=3357;
+		nextID=3359;
 	};
 	class MarkerIDProvider
 	{
-		nextID=201;
+		nextID=203;
 	};
 	class Camera
 	{
-		pos[]={6268.374,148.17957,2196.4666};
-		dir[]={-0.020750383,-0.99983519,-0.010727887};
-		up[]={-0.88805407,0.023118285,-0.45912242};
-		aside[]={-0.45929715,-4.3291366e-006,0.88838702};
+		pos[]={10429.316,19.319355,2395.9194};
+		dir[]={-0.68844849,-0.57033688,-0.44808221};
+		up[]={-0.47801352,0.82140702,-0.31111878};
+		aside[]={-0.54550052,1.6167178e-007,0.83812553};
 	};
 };
 binarizationWanted=0;
@@ -92,7 +92,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=871;
+		items=872;
 		class Item0
 		{
 			dataType="Marker";
@@ -1479,10 +1479,10 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={10390.625,5.8479667,2383.3992};
-			name="civ_gar_1_3_1_1";
+			name="civ_g_2";
 			text="Garage";
 			type="o_service";
-			angle=225.97482;
+			angle=225.97499;
 			id=147;
 		};
 		class Item139
@@ -1607,7 +1607,7 @@ class Mission
 			text="Chernarus National Bank";
 			type="loc_Tourism";
 			colorName="ColorBlue";
-			angle=358.0589;
+			angle=358.05887;
 			id=164;
 		};
 		class Item152
@@ -1629,7 +1629,7 @@ class Mission
 			text="Chernarus Maximum Security Prison";
 			type="mil_dot";
 			colorName="Color4_FD_F";
-			angle=66.104996;
+			angle=66.104988;
 			id=169;
 		};
 		class Item154
@@ -6866,14 +6866,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10390.858,5.8497467,2382.9602};
-						angles[]={0.0013372133,1.7802954,6.2818484};
+						position[]={10390.858,5.8497472,2382.96};
+						angles[]={0.0013439035,1.7802881,6.2818413};
 					};
 					side="Civilian";
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_car_3"";  }]; this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+						init="this enableSimulation false; this allowDamage false; this addAction[""Vehicle Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] call life_fnc_MP; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""civ_g_2"";  }]; this addAction[""Store vehicle in Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 					};
 					id=2254;
 					type="C_man_1";
@@ -26867,6 +26867,15 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item871
+		{
+			dataType="Marker";
+			position[]={10403.91,5.9906807,2381.979};
+			name="car_g_2";
+			type="Empty";
+			angle=46.173225;
+			id=3358;
 		};
 	};
 };
