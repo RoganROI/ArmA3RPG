@@ -2868,6 +2868,27 @@
 			<Italian>Olio processato</Italian>
 			<Portuguese>Petróleo Refinado</Portuguese>
 		</Key>
+		<Key ID="STR_Item_JetFuel">
+			<Original>Jet Fuel</Original>
+			<German>Kerosin</German>
+			<French>Carburéacteur</French>
+			<Italian>Carburante per jet</Italian>
+			<Portuguese>Combustível de avião</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Diesel">
+			<Original>Diesel</Original>
+			<German>Diesel</German>
+			<French>Diesel</French>
+			<Italian>Diesel</Italian>
+			<Portuguese>Diesel</Portuguese>
+		</Key>
+		<Key ID="STR_Item_Gasoline">
+			<Original>Gasoline</Original>
+			<German>Benzin</German>
+			<French>De l'essence</French>
+			<Italian>Gasolio</Italian>
+			<Portuguese>Gasolina</Portuguese>
+		</Key>
 		<Key ID="STR_Item_HeroinU">
 			<Original>Unprocessed Heroin</Original>
 			<German>Unverarbeitetes Heroin</German>
@@ -3232,6 +3253,13 @@
 			<Italian>Tronchese</Italian>
 			<Portuguese>Alicate</Portuguese>
 		</Key>
+		<Key ID="STR_Item_HackingDevice">
+			<Original>Hacking Device</Original>
+			<German>Hacking-Gerät</German>
+			<French>Dispositif hacking</French>
+			<Italian>dispositivo Hacking</Italian>
+			<Portuguese>dispositivo Hacking</Portuguese>
+		</Key>
 		<Key ID="STR_Item_DefuseKit">
 			<Original>Bomb Defuse Kit</Original>
 			<German>Bombenentschärfungskit</German>
@@ -3474,6 +3502,13 @@
 			<Italian>Non sei girato verso la porta di una casa.</Italian>
 			<Portuguese>Você não esta olhando para porta.</Portuguese>
 		</Key>
+		<Key ID="STR_ISTR_Hack_System">
+			<Original>!!!!! THE BANK SECURITY SYSTEM HAS BEEN BREACHED !!!!!!</Original>
+			<German>!!!!! DIE BANK-SICHERHEITSSYSTEM verletzt wurde !!!!!!</German>
+			<French>!!!!! LE SYSTEME DE SECURITE DE LA BANQUE A ÉTÉ ENFREINT !!!!!!</French>
+			<Italian>!!!!! IL SISTEMA BANCARIO DI SICUREZZA è stato violato !!!!!!</Italian>
+			<Portuguese>!!!!! O sistema de banco de segurança foi violado !!!!!!</Portuguese>
+		</Key>
 		<Key ID="STR_ISTR_Bolt_AlertFed">
 			<Original>!!!!! SOMEONE IS BREAKING INTO THE FEDERAL RESERVE !!!!!!</Original>
 			<German>!!!!! JEMAND BRICHT IN DIE ZENTRALBANK EIN !!!!!!</German>
@@ -3494,6 +3529,13 @@
 			<French>Crochetage de la serrure</French>
 			<Italian>Tranciando i blocchi sulla porta</Italian>
 			<Portuguese>Cortando o cadeado da porta</Portuguese>
+		</Key>
+		<Key ID="STR_ISTR_Hacking_Process">
+			<Original>Hacking door security</Original>
+			<German>Hacking Tür Sicherheit</German>
+			<French>porte de sécurité Hacking</French>
+			<Italian>sicurezza porta Hacking</Italian>
+			<Portuguese>porta de segurança Hacking</Portuguese>
 		</Key>
 		<Key ID="STR_ISTR_Defuse_Nothing">
 			<Original>There is no charge on the vault?</Original>

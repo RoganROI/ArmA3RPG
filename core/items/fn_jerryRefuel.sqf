@@ -12,13 +12,13 @@ if(isNull _vehicle) exitWith {hint localize "STR_ISTR_Jerry_NotLooking"};
 if(!(_vehicle isKindOF "LandVehicle") && !(_vehicle isKindOf "Air") && !(_vehicle isKindOf "Ship")) exitWith {};
 if(player distance _vehicle > 7.5) exitWith {hint localize "STR_ISTR_Jerry_NotNear"};
 
-if(!([false,"fuelF",1] call life_fnc_handleInv)) exitWith {};
+if(!([true,"fuelFull",1] call life_fnc_handleInv)) exitWith {hint "ERRO!"};
 life_action_inUse = true;
 _displayName = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
 
-_upp = format[localize "STR_ISTR_Jerry_Process",_displayName];
 //Setup our progress bar.
 disableSerialization;
+_upp = format[localize "STR_ISTR_Jerry_Process",_displayName];
 5 cutRsc ["life_progress","PLAIN"];
 _ui = uiNameSpace getVariable "life_progress";
 _progress = _ui displayCtrl 38201;
@@ -94,4 +94,5 @@ switch (true) do
 	};
 };
 titleText[format[localize "STR_ISTR_Jerry_Success",_displayName],"PLAIN"];
-[true,"fuelE",1] call life_fnc_handleInv;
+[false,"fuelFull",2] call life_fnc_handleInv;
+[true,"fuelEmpty",1] call life_fnc_handleInv;

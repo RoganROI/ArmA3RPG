@@ -92,6 +92,7 @@ class Life_Client_Core
 		class gather {};
 		class gutAnimal {};
 		class surrender {};
+		class hackSecurity {};
 	};
 	
 	class Housing
@@ -314,9 +315,11 @@ class Life_Client_Core
 		class jerryRefuel {};
 		class flashbang {};
 		class boltcutter {};
+		class hackingdevice {};
 		class blastingCharge {};
 		class defuseKit {};
 		class storageBox {};
+		class bankAlarm {};
 	};
 	
 	class Dialog_Controls

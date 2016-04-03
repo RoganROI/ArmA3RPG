@@ -18,6 +18,9 @@ switch (_mode) do
 		{
 			case "oilu": {"life_inv_oilu"};
 			case "oilp": {"life_inv_oilp"};
+			case "jetfuel": {"life_inv_jetfuel"};
+			case "diesel": {"life_inv_diesel"};
+			case "gasoline": {"life_inv_gasoline"};
 			case "heroinu": {"life_inv_heroinu"};
 			case "heroinp": {"life_inv_heroinp"};
 			case "cannabis": {"life_inv_cannabis"};
@@ -62,6 +65,7 @@ switch (_mode) do
 			case "goldbar": {"life_inv_goldbar"};
 			case "blastingcharge": {"life_inv_blastingcharge"};
 			case "boltcutter": {"life_inv_boltcutter"};
+			case "hackingdevice": {"life_inv_hackingdevice"};
 			case "defusekit": {"life_inv_defusekit"};
 			case "storagesmall": {"life_inv_storagesmall"};
 			case "storagebig": {"life_inv_storagebig"};
@@ -74,6 +78,9 @@ switch (_mode) do
 		{
 			case "life_inv_oilu": {"oilu"};
 			case "life_inv_oilp": {"oilp"};
+			case "life_inv_jetfueld": {"jetfuel"};
+			case "life_inv_diesel": {"diesel"};
+			case "life_inv_gasoline": {"gasoline"};
 			case "life_inv_heroinu": {"heroinu"};
 			case "life_inv_heroinp": {"heroinp"};
 			case "life_inv_cannabis": {"cannabis"};
@@ -118,6 +125,7 @@ switch (_mode) do
 			case "life_inv_goldbar": {"goldbar"};
 			case "life_inv_blastingcharge": {"blastingcharge"};
 			case "life_inv_boltcutter": {"boltcutter"};
+			case "life_inv_hackingdevice": {"hackingdevice"};
 			case "life_inv_defusekit": {"defusekit"};
 			case "life_inv_storagesmall": {"storagesmall"};
 			case "life_inv_storagebig": {"storagebig"};

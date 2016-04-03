@@ -40,7 +40,7 @@ if(!alive _curTarget && _curTarget isKindOf "Animal" && !(EQUAL((typeOf _curTarg
 	[_curTarget] call life_fnc_gutAnimal;
 };
 
-if(_curTarget isKindOf "House_F" && {player distance _curTarget < 12} OR ((nearestObject [[16019.5,16952.9,0],"Land_Dome_Big_F"]) == _curTarget OR (nearestObject [[16019.5,16952.9,0],"Land_Research_house_V1_F"]) == _curTarget)) exitWith {
+if(_curTarget isKindOf "House_F" && {player distance _curTarget < 12} OR ((nearestObject [[2569.861,5059.013,-0.934],"Land_CommonwealthBank"]) == _building)) exitWith {
 	[_curTarget] call life_fnc_houseMenu;
 };
 

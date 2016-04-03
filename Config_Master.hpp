@@ -127,6 +127,7 @@ class VirtualItems {
 	VITEMMACRO(goldbar, "STR_Item_GoldBar", "goldBar", 12, -1, 95000, false, -1, "")
 	VITEMMACRO(blastingcharge, "STR_Item_BCharge", "blastingCharge", 15, 35000, -1, true, -1, "icons\ico_blastingCharge.paa")
 	VITEMMACRO(boltcutter, "STR_Item_BCutter", "boltCutter", 5, 7500, -1, true, -1, "icons\ico_boltcutters.paa")
+	VITEMMACRO(hackingdevice, "STR_Item_HackingDevice", "hackingdeice", 2, 15000, -1, true, -1, "")
 	VITEMMACRO(defusekit, "STR_Item_DefuseKit", "defuseKit", 2, 2500, -1, false, -1, "")
 	VITEMMACRO(storagesmall, "STR_Item_StorageBS", "storageSmall", 5, 75000, -1, false, -1, "icons\ico_storageSmall.paa")
 	VITEMMACRO(storagebig, "STR_Item_StorageBL", "storageBig", 10, 150000, -1, false, -1, "icons\ico_storageBig.paa")
@@ -134,6 +135,9 @@ class VirtualItems {
 	//Mined Items
 	VITEMMACRO(oil_unprocessed, "STR_Item_OilU", "oilUnprocessed", 7, -1, -1, false, -1, "")
 	VITEMMACRO(oil_processed, "STR_Item_OilP", "oilProcessed", 6, -1, 3200, false, -1, "")
+	VITEMMACRO(jetfuel, "STR_Item_JetFuel", "jetFuel", 5, -1, 2000, false, -1, "")
+	VITEMMACRO(diesel, "STR_Item_Diesel", "diesel", 5, -1, 2700, false, -1, "")
+	VITEMMACRO(gasoline, "STR_Item_Gasoline", "gasoline", 5, -1, 2300, false, -1, "")
 	VITEMMACRO(copper_unrefined, "STR_Item_CopperOre", "copperUnrefined", 4, -1, -1, false, -1, "")
 	VITEMMACRO(copper_refined, "STR_Item_CopperIngot", "copperRefined", 3, -1, 1500, false, -1, "")
 	VITEMMACRO(iron_unrefined, "STR_Item_IronOre", "ironUnrefined", 5, -1, -1, false, -1, "")
@@ -231,7 +235,7 @@ class VirtualShops {
 
 	class rebel {
 		name = "STR_Shops_Rebel";
-		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "blastingcharge" };
+		items[] = { "waterBottle", "rabbit_grilled", "apple", "redgull", "tbacon", "lockpick", "pickaxe", "fuelFull", "peach", "boltcutter", "hackingdevice", "blastingcharge" };
 	};
 
 	class gang {
@@ -256,7 +260,7 @@ class VirtualShops {
 
 	class oil {
 		name = "STR_Shops_Oil";
-		items[] = { "oil_processed", "pickaxe", "fuelFull" };
+		items[] = { "oil_processed", "jetfuel", "diesel", "gasoline", "pickaxe", "fuelFull" };
 	};
 
 	class fishmarket {
