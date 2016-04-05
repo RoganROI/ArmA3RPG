@@ -16,7 +16,7 @@ _doors = getNumber(configFile >> "CfgVehicles" >> (typeOf _building) >> "NumberO
 
 _door = 0;
 //Find the nearest door
-for "_i" from 1 to _doors do {
+for "_i" from 1 to 8 do {
 	_selPos = _building selectionPosition format["Interact%1",_i];
 	_worldSpace = _building modelToWorld _selPos;
 		if(player distance _worldSpace < 2) exitWith {_door = _i;};

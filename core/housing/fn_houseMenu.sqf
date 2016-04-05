@@ -23,7 +23,7 @@ disableSerialization;
 _curTarget = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
 _houseCfg = M_CONFIG(getNumber,"Houses",typeOf(_curTarget),"price");
-if (_houseCfg == 0) exitWith {closeDialog 0};
+if (!(_houseCfg > 0 || (nearestObject [[2569.861,5059.013,-0.934],"Land_Commonwealthbank"]) == _curTarget	)) exitWith {closeDialog 0;};
 
 _Btn1 = CONTROL(37400,Btn1);
 _Btn2 = CONTROL(37400,Btn2);
@@ -36,14 +36,13 @@ _Btn7 = CONTROL(37400,Btn7);
 
 life_pInact_curTarget = _curTarget;
 if(_curTarget isKindOf "House_F" && playerSide == west) exitWith {
-	if((nearestObject [[2569.861,5059.013,-0.934],"Land_CommonwealthBank"]) == _curTarget) then {
-		
+	if(((nearestObject [[2569.861,5059.013,-0.934],"Land_Commonwealthbank"]) == _curTarget)) then {
 		_Btn1 ctrlSetText localize "STR_pInAct_Repair";
 		_Btn1 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_repairDoor; closeDialog 0;";
 		_Btn1 ctrlShow true;
 		
 		_Btn2 ctrlSetText localize "STR_pInAct_CloseOpen";
-		_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_doorAnimate; closeDialog 0;";
+		_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_blastingCharge; closeDialog 0;";
 		_Btn2 ctrlShow true;
 		
 	} else {
