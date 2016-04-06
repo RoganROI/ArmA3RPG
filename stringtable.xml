@@ -4088,6 +4088,13 @@
 			<Italian>Apri / Chiudi</Italian>
 			<Portuguese>Abrir / Fechar</Portuguese>
 		</Key>
+		<Key ID="STR_pInAct_RepairVault">
+			<Original>Repair Vault</Original>
+			<German>Repair Vault</German>
+			<French>Repair Vault</French>
+			<Italian>Repair Vault</Italian>
+			<Portuguese>Repair Vault</Portuguese>
+		</Key>
 		<Key ID="STR_pInAct_BreakDown">
 			<Original>Break down door</Original>
 			<German>Tür aufbrechen</German>

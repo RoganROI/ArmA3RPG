@@ -36,7 +36,7 @@ _progressBar progressSetPosition 0.01;
 _cP = 0.01;
 
 switch (typeOf _building) do {
-	case "Land_CommonwealthBank": {_cpRate = 0.5/*0.0015*/;};
+	case "Land_CommonwealthBank": {_cpRate = 0.0015;};
 	default {_cpRate = 0.0015;}
 };
 

@@ -18,7 +18,7 @@ while {true} do {
 		_timer = _uiDisp displayCtrl 38301;
 	};
 	if(round(_time - time) < 1) exitWith {};
-	if(!(fed_bank GVAR ["chargeplaced",false])) exitWith {};
+	if(!(fed_bank_1 GVAR ["chargeplaced",false])) exitWith {};
 	_timer ctrlSetText format["%1",[(_time - time),"MM:SS.MS"] call BIS_fnc_secondsToString];
 	sleep 0.08;
 };
