@@ -27,5 +27,7 @@ _unit addRating 1e12; //Set our rating to a high value, this is for a ARMA engin
 player playMoveNow "amovppnemstpsraswrfldnon";
 
 [] call life_fnc_setupActions;
+life_respawned = true; 
+[] call life_fnc_spawnMenu;
 [[_unit,life_sidechat,playerSide],"TON_fnc_managesc",false,false] call life_fnc_MP;
 if(EQUAL(LIFE_SETTINGS(getNumber,"enable_fatigue"),0)) then {player enableFatigue false;};

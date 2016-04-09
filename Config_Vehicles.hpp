@@ -55,7 +55,7 @@ class CarShops {
 	class med_air_hs {
 		side = "med";
 		vehicles[] = {
-			{ "ivory_b206_rescue", 5000, "mAir" }
+			{ "ivory_b206_rescue", 5000, "mAir", { "life_medicsrlevel", 1 } },
 		};
 	};
 
@@ -101,22 +101,22 @@ class CarShops {
 	class cop_car_dtu {
 		side = "cop";
 		vehicles[] = {
-			{ "DAR_ChargerPoliceStateSlick", 2000, "" },
-			{ "DAR_TaurusPoliceStateSlick", 0000, "" },
-			{ "DAR_TahoePoliceDet", 3000, "", { "life_coplevel", 4 } },
-			{ "DAR_ExplorerPoliceStealth", 3000, "", { "life_coplevel", 4 } },
-			{ "ivory_wrx_cop_unmarked", 3000, "", { "life_coplevel", 6 } },
-			{ "jonzie_raptor", 2000, "" },
-			{ "ivory_m3", 2000, "" },
-			{ "jonzie_escalade", 2000, "" },
-			{ "ivory_isf", 2000, "" }
+			{ "DAR_ChargerPoliceStateSlick", 2000, "", { "life_copsiulevel", 1 } },
+			{ "DAR_TaurusPoliceStateSlick", 0000, "", { "life_copsiulevel", 1 } },
+			{ "DAR_TahoePoliceDet", 3000, "", { "life_copsiulevel", 1 } },
+			{ "DAR_ExplorerPoliceStealth", 3000, "", { "life_copsiulevel", 1 } },
+			{ "ivory_wrx_cop_unmarked", 3000, "", { "life_copsiulevel", 1 } },
+			{ "jonzie_raptor", 2000, "", { "life_copsiulevel", 1 } },
+			{ "ivory_m3", 2000, "", { "life_copsiulevel", 1 } },
+			{ "jonzie_escalade", 2000, "", { "life_copsiulevel", 1 } },
+			{ "ivory_isf", 2000, "", { "life_copsiulevel", 1 } }
 		};
 	};
 	
 	class cop_car_eru {
 		side = "cop";
 		vehicles[] = {
-			{ "DAR_ExplorerPoliceStealth", 30000, "", { "life_coplevel", 4 } }
+			{ "DAR_ExplorerPoliceStealth", 30000, "", { "life_copsrulevel", 1 } }
 		};
 	};
 
@@ -690,9 +690,6 @@ class CfgVehicles {
         insurance = 2500;
         chopShop = 5000;
         textures[] = {
-        	{ "Sheriff", "cop", {
-                "\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sheriff_co.paa"
-            } },
 			{ "Black", "fed", {
 	                "\a3\air_f\Heli_Light_01\Data\heli_light_01_ext_ion_co.paa"
             } },

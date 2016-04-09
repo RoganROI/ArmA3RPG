@@ -54,6 +54,15 @@ life_action_inUse = true;
 	life_action_inUse = false;
 };
 
+/*
+ * Author:		Zako
+ * Date:		07/04/2016
+ * Change:		Removed since we want medic helicopters to spawn on a marker.
+ *
+ *					START OF EDIT
+ */
+/*
+
 //Check if it's a dead body.
 if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,independent]}) exitWith {
 	//Hotfix code by ins0
@@ -62,6 +71,9 @@ if(_curTarget isKindOf "Man" && {!alive _curTarget} && {playerSide in [west,inde
 	};
 };
 
+/*
+ *					END OF EDIT
+ */
 
 //If target is a player then check if we can use the cop menu.
 if(isPlayer _curTarget && _curTarget isKindOf "Man") then {

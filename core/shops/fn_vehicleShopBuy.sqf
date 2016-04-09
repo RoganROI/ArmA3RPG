@@ -46,6 +46,14 @@ if(EQUAL(_spawnPoint,"")) exitWith {hint localize "STR_Shop_Veh_Block";};
 SUB(CASH,_basePrice);
 hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
 
+/*
+ * Author:		Zako
+ * Date:		07/04/2016
+ * Change:		Removed since we want medic helicopters to spawn on a marker.
+ *
+ *					START OF EDIT
+ */
+/*
 //Spawn the vehicle and prep it.
 if((life_veh_shop select 0) == "med_air_hs") then {
 	_vehicle = createVehicle [_className,[0,0,999],[], 0, "NONE"];
@@ -73,6 +81,24 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	[[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] call life_fnc_MP;
 	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 };
+*/
+
+_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
+waitUntil {!isNil "_vehicle"}; //Wait?
+_vehicle allowDamage false; //Temp disable damage handling..
+_vehicle lock 2;
+_vehicle setVectorUp (surfaceNormal (getMarkerPos _spawnPoint));
+_vehicle setDir (markerDir _spawnPoint);
+_vehicle setPos (getMarkerPos _spawnPoint);
+[[_vehicle,_colorIndex],"life_fnc_colorVehicle",true,false] call life_fnc_MP;
+[_vehicle] call life_fnc_clearVehicleAmmo;
+[[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] call life_fnc_MP;
+[[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] call life_fnc_MP;
+_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+
+/*
+ *					END OF EDIT
+ */
 
 //Side Specific actions.
 switch(playerSide) do {

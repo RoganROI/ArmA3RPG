@@ -7,21 +7,31 @@ class WeaponShops {
         level = -1;
         msg = "";
         items[] = {
-            { "hgun_Rook40_F", "", 10500 },
-			{ "16Rnd_9x21_Mag", "", 2500 },
-            { "hgun_Pistol_heavy_02_F", "", 15850 },
-			{ "6Rnd_45ACP_Cylinder", "", 5000 },
-            { "hgun_ACPC2_F", "", 15500 },
-			{ "9Rnd_45ACP_Mag", "", 4500 },
-            { "hgun_PDW2000_F", "", 30000 },
-			{ "30Rnd_45ACP_Mag_SMG_01", "", 7500 },
 			{ "CUP_hgun_Makarov", "", 7500 },
             { "CUP_8Rnd_9x18_Makarov_M", "", 3000 },
+			{ "CUP_hgun_Duty", "", 8500 },
+            { "16Rnd_9x21_Mag", "", 3500 },
 			{ "CUP_hgun_M9", "", 10500 },
             { "CUP_15Rnd_9x19_M9", "", 4500 },
 			{ "CUP_hgun_SA61", "", 25500 },
             { "CUP_20Rnd_B_765x17_Ball_M", "", 7500 },
+			{ "CUP_hgun_M9", "", 10500 },
+            { "CUP_15Rnd_9x19_M9", "", 4500 },
+			{ "CUP_hgun_Colt1911", "", 10500 },
+            { "CUP_7Rnd_45ACP_1911", "", 4500 },
+			{ "CUP_hgun_MicroUzi", "", 10500 },
+            { "CUP_30Rnd_9x19_UZI", "", 4500 },
+			{ "CUP_hgun_PB6P9", "", 7000 },
+            { "CUP_8Rnd_9x18_Makarov_M", "", 2500 },
+			{ "CUP_hgun_TaurusTracker455", "", 12500 },
+            { "CUP_6Rnd_45ACP_M", "", 5000 },
             { "optic_ACO_grn_smg", "", 2500 },
+			{ "TRYK_V_Bulletproof_BL", "", 10000 },
+			{ "TRYK_V_Bulletproof_BLK", "", 10000 },
+			{ "TRYK_V_Bulletproof", "", 10000 },
+			{ "CUP_V_OI_TKI_Jacket1_06", "", 15000 },
+			{ "CUP_V_OI_TKI_Jacket1_03", "", 15000 },
+			{ "CUP_V_O_TK_OfficerBelt", "", 8000 },
             { "V_Rangemaster_belt", "", 10000 }
         };
     };
@@ -82,7 +92,6 @@ class WeaponShops {
         	{ "Binocular", "", 150 },
 			{ "ItemGPS", "", 100 },
 			{ "ToolKit", "", 250 },
-			{ "FirstAidKit", "", 150 },
 			{ "tf_fadak", "Short Range Radio", 1000 },
 			{ "NVGoggles", "", 50000 },
 			{ "Chemlight_red", "", 300 },
@@ -122,10 +131,10 @@ class WeaponShops {
 			{ "optic_Holosight", "", 200 },
 			{ "CUP_optic_CompM2_Desert", "", 200 },
             { "acc_flashlight", "", 200 },
+			{ "CUP_acc_Glock17_Flashlight", "", 200 },
 			{ "Binocular", "", 150 },
 			{ "ItemGPS", "", 100 },
 			{ "ToolKit", "", 250 },
-			{ "FirstAidKit", "", 150 },
 			{ "tf_anprc152_1", "Short Range Radio", 100 }
         };
     };
@@ -233,8 +242,13 @@ class WeaponShops {
             { "CUP_15Rnd_9x19_M9", "", 100 },
 			{ "CUP_hgun_Glock17", "", 1000 },
             { "CUP_17Rnd_9x19_glock17", "", 100 },
+			{ "CUP_hgun_Compact", "", 1000 },
+            { "CUP_10Rnd_9x19_Compact", "", 100 },
 			{ "hgun_Pistol_heavy_01_F", "", 1000 },
             { "11Rnd_45ACP_Mag", "", 100 },
+			{ "CUP_hgun_Phantom", "", 1000 },
+            { "CUP_18Rnd_9x19_Phantom", "", 100 },
+			{ "CUP_acc_CZ_M3X", "", 100 },
 			{ "CUP_smg_MP5A5", "", 1500 },
             { "CUP_30Rnd_9x19_MP5", "", 150 },
 			{ "CUP_arifle_AKS74U", "", 2000 },
@@ -265,6 +279,8 @@ class WeaponShops {
             { "CUP_17Rnd_9x19_glock17", "", 100 },
 			{ "hgun_Pistol_heavy_01_F", "", 1000 },
             { "11Rnd_45ACP_Mag", "", 100 },
+			{ "CUP_hgun_TaurusTracker455_gold", "", 1000 },
+            { "CUP_6Rnd_45ACP_M", "", 100 },
 			{ "CUP_smg_MP5A5", "", 1500 },
             { "CUP_30Rnd_9x19_MP5", "", 150 },
 			{ "CUP_arifle_AKS74U", "", 2000 },
@@ -286,7 +302,7 @@ class WeaponShops {
         name = "Chernarus ERU Shop ";
         side = "cop";
         license = "";
-        level = 3;
+        level[] = { "life_copsrulevel", "SCALAR", 1, "" };
         msg = "You must be a a member of ERU!";
         items[] = {
 			{ "CUP_arifle_M4A1", "", 2500 },
@@ -300,8 +316,8 @@ class WeaponShops {
             { "SMG_01_F", "", 2000 },
             { "30Rnd_45ACP_Mag_SMG_01", "", 100 },
 			{ "muzzle_snds_acp", "", 100 },
-			{ "CUP_sgun_M1014", "", 2000 },
-            { "CUP_8Rnd_B_Beneli_74Slug", "", 100 },
+			{ "A3RPG_sgun_M1014", "", 2000 },
+            { "A3RPG_8Rnd_B_Beanbag", "", 100 },
 			{ "CUP_srifle_M24_wdl", "", 3000 },
             { "CUP_5Rnd_762x51_M24", "", 300 },
 			{ "CUP_bipod_Harris_1A2_L", "", 100 },
@@ -317,8 +333,8 @@ class WeaponShops {
         name = "Detective Shop ";
         side = "cop";
         license = "";
-        level = 3;
-        msg = "You must be a a member of DTU!";
+        level[] = { "life_copsiulevel", "SCALAR", 1, "" };
+        msg = "You must be a a member of SIU!";
         items[] = {
             { "CUP_hgun_Makarov", "", 750 },
             { "CUP_8Rnd_9x18_Makarov_M", "", 75 },
@@ -345,8 +361,6 @@ class WeaponShops {
             { "ItemGPS", "", 100 },
 			{ "Binocular", "", 150 },
 			{ "ToolKit", "", 250 },
-			{ "FirstAidKit", "", 150 },
-			{ "Medikit", "", 500 },
 			{ "NVGoggles", "", 100 },
 			{ "tf_anprc152_1", "Short Range Radio", 100 },
 			{ "B_FieldPack_ocamo", "", 3000 }
